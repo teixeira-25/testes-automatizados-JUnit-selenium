@@ -2,13 +2,13 @@ import Pages.PageGoogle;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class AutomacaoTeste extends Hooks
+public class AutomacaoTeste
 {
     @Test
     public void tet() throws InterruptedException
     {
         PageGoogle braco = new PageGoogle();
-        //braco.abrirnavegador();
+        braco.abrirnavegador();
         braco.maximizar();
         braco.clicarEescrever1("APjFqb","A igreja de jesus cristo");
         braco.clicar3("gNO89b");
@@ -16,6 +16,6 @@ public class AutomacaoTeste extends Hooks
         braco.esperar(1000);
         braco.clicar("truste-consent-button");
         braco.esperar(3000);
-        //braco.fecharnavegador();
+        braco.fecharnavegador();
     }
 }
